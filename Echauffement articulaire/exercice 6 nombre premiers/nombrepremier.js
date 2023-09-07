@@ -1,11 +1,17 @@
+function estNombrePremier(nombre) {
+    if (nombre < 2) {
+        return false;
+    }
+    for (let i = 2; i < nombre; i++) {
+        if (nombre % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
 for (let i = 1; i <= 50; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-        console.log("Fizz");
-    } else if (i % 5 === 0) {
-        console.log("Buzz");
-    } else {
+    if (estNombrePremier(i)) {
         console.log(i);
     }
 }
