@@ -9,7 +9,7 @@ function estPalindrome(chaine) {
     return chaine === chaineInverse;
 }
 
-let chaine = "Monter en haut";
+let chaine = "Non félix";
 let estUnPalindrome = estPalindrome(chaine);
 
 console.log(`La phrase "${chaine}" est un palindrome : ${estUnPalindrome}`);
